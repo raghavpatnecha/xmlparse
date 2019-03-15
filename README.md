@@ -24,15 +24,11 @@ RULE DEF : (value(_amEntitled) = literal(1) and value(IsMeterSelected) != litera
 
 File Info:
 
-1. print_pick_rules - > Gives all pick rule in xml.
+1. sub_rule_prop_witem.py - > Gives all pick rule in xml, along with where they are attached(works fine). Although it gives what triggers them but fails to identify them correctly, as I have ignored the `or` `and` scenario and just manually checked the property
 
-2. rules_attached_at - > Gives all items where the rule is attached.
 
-3. xml_ast_parse - > Get all Rules definitions.
+3. xml_ast_ruleparse.py - > Get all Rules definitions.
 
-4. test_regex_to_get_individual_rule_prop - > test regex created to extracted individual property from Rules.
-
-5. print_item_prop_useless - > This files prints all properties attached at all ITEM tags. Just created for testing as I was not able to figure out the correct approach.
 
 
 Few exceptions:
